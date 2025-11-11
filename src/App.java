@@ -25,10 +25,25 @@ public class App {
             }
             values.add(input);
         }
-        System.out.println("");
-        //Write your code below here
+           int input = Integer.valueOf(scanner.nextLine());
+
+        // set new arraylist
+        ArrayList<Integer> values2 = new ArrayList<>();
+        for (int i = 0; i < values.size(); i++)
+        {
+            if (values.get(i) > input)
+            {
+                values2.add(values.get(i));
+            }
+        }
+        // print contents
+        for (int i = 0; i < values2.size(); i++)
+        {
+            System.out.println(values2.get(i));
+        }
 
 
 
     }
 }
+
